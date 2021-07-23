@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Magic 8 Ball</title>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
       <input id="question" type="text" >
 
       <!-- TODO:: Call answerQuestion function when this is clicked. -->
-      <div id="eight-ball">
+      <div id="eight-ball" onclick='answerQuestion()'>
         <div id="window">
 
           <!-- A "hidden" class will be added to this using javascript when an answer is shown. -->
@@ -32,7 +32,7 @@
         </div>
       </div>
     </div>
-    <script src="provided.js"></script>
-    <script src="script.js"></script>
+    <script src="../provided.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>

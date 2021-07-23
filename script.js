@@ -20,6 +20,9 @@
 
 */
 function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max-min + 1) + min); //The max and min are both inclusive
 }
 
 /* Write a function that handles the magic 8-ball being clicked. Here are the steps:
@@ -34,4 +37,8 @@ function getRandomIntInclusive(min, max) {
        (loops could be required).
 */
 function answerQuestion() {
+    const answers = ["it's possible", "I meannnnn...", "no doubt", "no chance", "don't bet on it"];
+    let num = getRandomIntInclusive(0,4);
+    let response = answers[num];
+    makeAnswerAppear(response);
 }

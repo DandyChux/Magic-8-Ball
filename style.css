@@ -58,7 +58,7 @@ input {
 
 #triangle.hidden  {
   opacity: 0;
-  transition-duration: 0s;
+  transition-duration: 0.5s;
 }
 
 #answer-text {
@@ -73,5 +73,5 @@ input {
 
 #answer-text.hidden {
   opacity: 0;
-  transition-duration: 0s;
+  transition-duration: 0.5s;
 }
